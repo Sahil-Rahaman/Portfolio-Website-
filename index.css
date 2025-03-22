@@ -1,0 +1,623 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header{
+    height: 100vh;
+    margin-bottom: -5vmin;
+}
+
+nav{ /*styling the navigation bar*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height: 9vmin;
+    background-color: #1f242d;
+    padding:0px 10vmin;
+    color:white;
+    position: fixed;
+    z-index: 10;
+}
+.logo{
+    font-size: 4vmin;
+    font-weight: bolder;
+}
+.logo span{
+    color:#7cf03d
+}
+.toggle-day-night{
+    border: 3px solid  #7cf03d;
+    border-radius: 10px;
+}
+.toggle-day-night i{
+    font-size: 4vmin;
+    padding: 1vmin;
+    border-radius: 10px;
+    margin: 0px;
+    cursor: pointer;
+}
+#dark-mode{
+    background-color: #7cf03d;
+    border-radius: 0px;
+}
+.nav-links a{
+    color: white;
+    margin-left: 4vmin;
+    font-weight: 400;
+    transition: all ease 0.4s;
+}
+.nav-links a:hover, .nav-links a.active{
+    color: #7cf03d;
+}
+.nav-links i{
+    display: none;
+}
+.landing-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height: calc(100% - 35px);
+    padding:0px 10vmin;
+    background-color: #1f242d;
+    flex-wrap: wrap;
+}
+
+
+.landing-text{
+    color:white;
+}
+.landing-image img{
+    height: 60vmin;
+    width: 45vmin;
+    transition: all ease 0.4s;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: moveUpDown 3s infinite ease-in-out;
+}
+@keyframes moveUpDown { /*animating the banner image*/
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+.social-media-icons i{
+    font-size: 4vmin;
+    border: 2px solid  #7cf03d;
+    margin-left: 2vmin;
+    border-radius: 50%;
+    color:#7cf03d;
+    padding: 0.4vmin;
+}
+.social-media-icons{
+    margin-top: 4vmin;
+    margin-left: -2vmin;
+}
+.landing-text button{
+    margin-top: 3vmin;
+    padding: 1.5vmin;
+    border-radius: 25px;
+    background-color:#7cf03d;
+    color: #1f242d;
+    font-weight: 660;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    border-color: #7cf03d;
+}
+.landing-text button:hover{
+    box-shadow: 0px 0px 0px 5px #7cf03d;
+}
+.landing-image img:hover{
+    box-shadow: 0px 0px 0px 5px #7cf03d; 
+}
+
+main{
+    width:100%;
+    height: 100%;
+}
+.aboutme-section{ /*styling the about me section*/
+    display: flex;
+    background-color: #2a3343;
+    padding: 0px 10vmin;
+    padding-top: 10vmin;
+    padding-bottom: 9vmin;
+    width: 100%;
+}
+.aboutme-image img{
+    height: 70vmin;
+    width: 45vmin;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.aboutme-text{
+    color: white;
+    margin-left: 4vmin;
+}
+.aboutme-text p{
+    margin-top: 4vmin;
+}
+.aboutme-text button{
+    margin-top: 4vmin;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #7cf03d;
+    color: #2a3343;
+    font-weight: 600;
+    transition: all ease 0.4s;
+    cursor: pointer;
+    
+}
+.aboutme-text button:hover{
+    box-shadow: 0px 0px 0px 4px #7cf03d;
+}
+
+.aboutme-text span{
+   color: #7cf03d;
+}
+
+.skill-section{ /*styling the skill section*/
+    display: flex;
+    flex-direction: column;
+    background-color: #1f242d;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    padding-top: 10vmin;
+    overflow-x: hidden;
+    padding-bottom: 8vmin;
+}
+.skill-section h1{
+    color:white;
+}
+.skill-section h1{
+    text-align: center;
+    margin-bottom: 5vmin;
+}
+.skill-section h1 span{
+    color: #7cf03d;
+}
+.skill-box{
+    background-color: #2a3343;
+    width: 120vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vmin 15vmin;
+    border-radius: 15px;
+    line-height: 6vmin;
+
+}
+.skill-box-heading{
+    color: white;
+}
+.skill-section .bar{
+    height: 2vmin;
+    border-radius: 40px;
+    border: 2px solid #7cf03d;
+    width:90vmin;
+}
+.skill-section .load-1, .load-2, .load-3, .load-4, .load-5, .load-6, .load-7{
+    height:1.7vmin ;
+    border-radius: 40px 0px 0px 40px;
+    background-color: #7cf03d;
+    width:90%;
+}
+.load-2{
+    width:80%;
+}
+.load-3{
+    width:85%;
+}
+.load-4{
+    width:70%;
+}
+.load-5{
+    width:95%;
+}
+.load-6{
+    width:88%
+}
+.load-7{
+    width: 93%;
+}
+
+.certificate{ /*styling the my certificate section*/
+    background-color:  #2a3343;
+    padding-bottom: 8vmin;
+}
+.certificate-section{
+    display: flex;
+    width:100%
+}
+.certificate h1{
+    text-align: center;
+    margin-bottom: 4vmin;
+    margin-top: 0vmin;
+    padding-top: 10vmin;
+    color: white;
+}
+.certificate h1 span{
+    color:#7cf03d;
+}
+.certificate-heading{
+    margin-left: 5vmin;
+    border: 3px solid #7cf03d;
+    background-color: #1f242d;
+    color: white;
+    text-align: center;
+    width: 30%;
+    border-radius: 10px;
+    transition: all ease 0.4s;
+}
+.certificate-heading:hover{
+    box-shadow: 0px 0px 0px 4px #7cf03d;
+   
+}
+.certificate-heading i{
+    font-size: 8vmin;
+    color: #7cf03d;
+    margin-top: 4vmin;
+}
+.certificate-heading p{
+    margin: 0vmin 2vmin;
+
+}
+.certificate-heading a{
+    width: 14vmin;
+    height: 7vmin;
+    background-color: #7CF03D;
+    display: inline-block;
+    margin-bottom: 2vmin;
+    margin-top: 2vmin;
+    color: black;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.projects{ /*styling the my project section*/
+    background-color: #1f242d;
+    padding-top: 8vmin;
+    padding-bottom: 8vmin;
+}
+.projects h1{
+    color:white;
+    margin-bottom: 5vmin;
+    text-align: center;
+}
+.projects h1 span{
+    color: #7CF03D;
+}
+.project-container{
+    width: 100%; height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 8vmin;
+
+}
+.project-section-1{
+    position: relative;
+    width:28%;
+    height:50vmin;
+    background-image: url('./images/e-banking-project.webp');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid #7cf03d;
+}
+.project-section-2{
+    position: relative;
+    width:28%;
+    height:50vmin;
+    background-image: url('./images/e-commerce.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid #7cf03d;
+}
+.project-section-3{
+    position: relative;
+    width:28%;
+    height:50vmin;
+    background-image: url('./images/portfolio.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid #7cf03d;
+}
+
+.project-section-4{
+    position: relative;
+    width:28%;
+    height:50vmin;
+    background-image: url('./images/uber-clone-project.webp');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid #7cf03d;
+}
+.project-section-5{
+    position: relative;
+    width:28%;
+    height:50vmin;
+    background-image: url('./images/youtube-clone-project.webp');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid #7cf03d;
+}
+.project-section-6{
+    position: relative;
+    width:28%;
+    height:50vmin;
+    background-image: url('./images/zomato-clone-project.webp');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid #7cf03d;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(124,240,61,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+.overlay span{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.7vmin;
+    margin: 0vmin 1vmin;
+}
+
+.project-section-1:hover .overlay, .project-section-2:hover .overlay, .project-section-3:hover .overlay, .project-section-4:hover .overlay, .project-section-5:hover .overlay, .project-section-6:hover .overlay{
+    opacity: 1;
+}
+
+.contact{ /*styling the contact section*/
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a3343;
+    padding-top: 8vmin;
+    padding-bottom: 8vmin;
+}
+.contact h1{
+    margin-bottom: 5vmin;
+    color: white;
+}
+.contact h1 span{
+    color: #7CF03D;
+}
+.contact-section{
+   text-align: center;
+   width: 80%;
+}
+.contact-section input{
+    height: 8vmin;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #1F242D;
+    border: 2px solid white;
+    margin-bottom: 5vmin;
+    color: white;
+    padding: 20px;
+}
+.contact-section textarea{
+    height: 20vmin;
+    width: 62%;
+    border-radius: 10px;
+    background-color: #1F242D;
+    border: 2px solid white;
+    overflow: hidden;
+    color: white;
+    padding: 7px;
+}
+#select{
+    margin-left: 1.5vmin;
+}
+.contact-section input::placeholder{
+    padding: 2vmin;
+}
+.contact-section textarea::placeholder{
+    padding: 2.5vmin;
+}
+.contact-section button{
+    margin-top: 2.5vmin;
+    padding: 1.2vmin;
+    border-radius: 6px;
+    background-color: #7CF03D;
+    color: black;
+    font-weight: 600;
+    transition: all ease 0.4s;
+    cursor: pointer;
+}
+.contact-section button:hover{
+    box-shadow: 0px 0px 0px 5px #7CF03D;
+}
+
+footer{ /**styling the footer section*/
+    width: 100;
+    height: 100%;
+    background-color: #2A3343;
+    display: flex;
+    justify-content: center;
+}
+.personal-contact{
+    display: flex;
+    text-align: center;
+    margin-left: 2vmin;
+    width: 80%;
+    height: 14vmin;
+    justify-content: center;
+    align-items: center;
+    gap: 8vmin;
+    background-color: #1F242D;
+    font-size: 2.8vmin;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: 8vmin;
+}
+.whatsapp, .phone{
+    border: 3px solid #7CF03D;
+    padding: 10px;
+    border-radius: 26px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.whatsapp span, .phone span{
+    opacity: 0;
+    visibility: hidden; /* Ensures it's invisible but still measurable */
+    position: absolute; /* Removes it from the flow to avoid space occupation */
+    transition: opacity 1s ease;
+}
+.whatsapp:hover span, .phone:hover span{
+    opacity: 1;
+    visibility: visible; /* Makes it visible on hover */
+    position: static; /* Re-inserts it into the flow */
+}
+@media (max-width:800px) { /*For i-pad Mini*/
+    .nav-links i{
+        display: block;
+        font-size: 7.5vmin;
+    }
+    .nav-links a{
+        display: none;
+    }
+    nav{
+        height: 13vmin;
+    }
+    .logo{
+        font-size:5vmin;
+    }
+    .toggle-day-night i{
+        font-size: 5.5vmin;
+    }
+    .toggle-day-night{
+        padding: 5px;
+    }
+    #dark-mode{
+        border-radius: 50%;
+    }
+    .landing-image img{
+        height: 64vmin;
+    width: 49vmin;
+    margin-top: -16vmin;
+    }
+    .landing-text{
+        font-size: 2.5vmin;
+    }
+    .aboutme-section{
+        flex-wrap: wrap;
+        padding-top: 10vmin;
+    }
+    .aboutme-image img{
+        width:50vmin;
+        margin-bottom: 4vmin;
+    }
+    .aboutme-text p{
+        font-size: 2.7vmin;
+    }
+    .aboutme-text{
+        margin-left: -1vmin;
+    }
+    .certificate-section{
+        flex-wrap: wrap;
+    }
+    .certificate-heading{
+        width:89%;
+        margin-bottom: 3vmin;
+        transition: box-shadow 0.3s ease;
+    }
+   
+}
+
+
+@media (max-width:400px) { /*For Samsung Galaxy S8+*/
+    header{
+        margin-bottom: -10vmin;
+    }
+    .nav-links i{
+        display: block;
+        font-size: 8.5vmin;
+    }
+    .nav-links a{
+        display: none;
+    }
+    nav{
+        height: 16vmin;
+    }
+    .logo{
+        font-size:6vmin;
+    }
+    .toggle-day-night i{
+        font-size: 5vmin;
+    }
+    .toggle-day-night{
+        padding: 3px;
+    }
+    #dark-mode{
+        border-radius: 50%;
+    }
+    .landing-text{
+        font-size: 2.5vmin;
+    margin-top: -30vmin;
+    }
+    .landing-text p{
+        font-size: 3.8vmin;
+        margin-top: 2vmin;
+    }
+    .landing-image img{
+    margin-top: -104vmin;
+    }
+    .aboutme-text{
+        margin-left: -1vmin;
+    }
+    .aboutme-text p{
+        font-size: 3.5vmin;
+    }
+    .skill-box{
+        line-height: 10vmin;
+    }
+    .certificate-heading{
+        margin-bottom: 6vmin;
+    }
+    .certificate-heading a{
+        width: 40vmin;
+        margin: 5vmin;
+    }
+    .contact-section input{
+        width: 48%;
+        height:13vmin;
+    }
+    .contact-section textarea{
+        width: 100%;
+    }
+}
